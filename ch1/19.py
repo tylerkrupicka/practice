@@ -1,4 +1,5 @@
 # string rotation
+# check if string is a rotation by using is_rotation
 
 def is_substring(x, y):
     return x in y

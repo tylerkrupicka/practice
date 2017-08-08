@@ -17,12 +17,15 @@ class LinkedList:
     def append(self, data):
         if self.head == None:
             self.head = Node(data)
+            return self.head
         else:
             end = Node(data)
             n = self.head
             while(n.next != None):
                 n = n.next
             n.next = end
+            return end
+
     def __len__(self):
         if self.head == None:
             return 0
